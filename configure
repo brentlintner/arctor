@@ -1,0 +1,3 @@
+npm install -g jshint
+npm install
+git submodule update --init

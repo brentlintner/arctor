@@ -1,0 +1,9 @@
+Arctor. A CommonJS module dependency mapper.
+
+Usage: arctor path path2 flag value
+
+Options:
+
+   --version (-v)            display package version
+   --server (-s)             visual graph of dependencies
+   --truncate-prefix         specify a string to truncate from every module path (relative to the cwd)

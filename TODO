@@ -1,0 +1,3 @@
+* size canvas depending on the dep size
+* support __dirname matches
+* if it's a file, don't append name to module title

@@ -1,0 +1,33 @@
+{
+  "name": "arctor",
+  "version": "0.0.1",
+  "description": "A CommonJS module dependency mapper.",
+  "homepage": "http://github.com/brentlintner/arctor",
+  "author": {
+    "name": "Brent Lintner",
+    "email": "brent.lintner@gmail.com",
+    "url": "http://github.com/brentlintner"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/mit-license.php"
+  }],
+  "bin": { "arctor": "bin/arctor" },
+  "main": "lib/arctor.js",
+  "files": [
+    "README.md",
+    "LICENSE",
+    "HELP",
+    "bin",
+    "lib",
+    "assets",
+    "deps/browser-require/require.js",
+    "deps/browser-require/README.md",
+    "deps/arbor/lib",
+    "deps/arbor/README"
+  ],
+  "dependencies": {
+    "argsparser": "0.0.x",
+    "connect": "1.7.x"
+  }
+}

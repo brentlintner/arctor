@@ -1,0 +1,6 @@
+[submodule "deps/arbor"]
+	path = deps/arbor
+	url = https://github.com/samizdatco/arbor.git
+[submodule "deps/browser-require"]
+	path = deps/browser-require
+	url = https://github.com/rsms/browser-require.git
