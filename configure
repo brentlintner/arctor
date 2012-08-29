@@ -1,3 +1,2 @@
-npm install -g jshint
-npm install
-git submodule update --init
+npm install -g jake
+npm install --dev

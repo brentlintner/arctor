@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.blue {
+  color: #3333FF
+}
+
+.lightblue {
+  color: #487DFF
+}
+
+.red {
+  color: #FF1717;
+}
+
+.green {
+  color: #07C500;
+}
+
+.grey {
+  color: #666666;
+}
+
+.lightgrey {
+  color: #CCCCCC;
+}
+
+.translucent {
+  opacity: 0.7;
+}
+
+.legend {
+  background: #EEEEEE;
+  display: inline-block;
+  position: absolute;
+  padding: .75em;
+  font-size: .75em;
+  margin: 1em 0 0 1em;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.legend {
+  font-style: italic;
+  font-weight: bold;
+}
