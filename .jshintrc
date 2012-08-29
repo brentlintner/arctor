@@ -1,70 +1,151 @@
+// Defaults as of jshint edition 2011-04-16
 {
-    // Settings
-    "passfail"      : false,  // Stop on first error.
-    "maxerr"        : 100,    // Maximum error before stopping.
+    // Whether the scan should stop on first error.
+    "passfail": false,
+    // Maximum errors before stopping.
+    "maxerr": 50,
 
 
-    // Predefined globals whom JSHint will ignore.
-    "browser"       : true,   // Standard browser globals e.g. `window`, `document`.
+    // Predefined globals
 
-    "node"          : false,
-    "rhino"         : false,
-    "couch"         : false,
-    "wsh"           : true,   // Windows Scripting Host.
+    // Whether the standard browser globals should be predefined.
+    "browser": true,
+    // Whether the Node.js environment globals should be predefined.
+    "node": true,
+    // Whether the Rhino environment globals should be predefined.
+    "rhino": false,
+    // Whether CouchDB globals should be predefined.
+    "couch": false,
+    // Whether the Windows Scripting Host environment globals should be predefined.
+    "wsh": false,
 
-    "jquery"        : true,
-    "prototypejs"   : false,
-    "mootools"      : false,
-    "dojo"          : false,
+    // Whether jQuery globals should be predefined.
+    "jquery": false,
+    // Whether Prototype and Scriptaculous globals should be predefined.
+    "prototypejs": false,
+    // Whether MooTools globals should be predefined.
+    "mootools": false,
+    // Whether Dojo Toolkit globals should be predefined.
+    "dojo": false,
 
-    "predef"        : [  // Custom globals.
-        "Buffer", "complete", "desc", "task", "arbor", "arctor"
+    // Custom predefined globals.
+    "predef": [
+                "describe", "it", "beforeEach", "afterEach", // tests
+                "arbor",
+                "arctor", "$", "jQuery", // web app js
+                "complete" // async jake tasks
     ],
 
+    // Development
 
-    // Development.
-    "debug"         : false,  // Allow debugger statements e.g. browser breakpoints.
-    "devel"         : true,   // Allow developments statements e.g. `console.log();`.
-
-
-    // ECMAScript 5.
-    "es5"           : true,   // Allow ECMAScript 5 syntax.
-    "strict"        : false,  // Require `use strict` pragma  in every file.
-    "globalstrict"  : false,  // Allow global "use strict" (also enables 'strict').
+    // Whether debugger statements should be allowed.
+    "debug": false,
+    // Whether logging globals should be predefined (console, alert, etc.).
+    "devel": false,
 
 
-    // The Good Parts.
-    "asi"           : false,  // Tolerate Automatic Semicolon Insertion (no semicolons).
-    "laxbreak"      : true,   // Tolerate unsafe line breaks e.g. `return [\n] x` without semicolons.
-    "bitwise"       : true,   // Prohibit bitwise operators (&, |, ^, etc.).
-    "boss"          : false,  // Tolerate assignments inside if, for & while. Usually conditions & loops are for comparison, not assignments.
-    "curly"         : true,   // Require {} for every new block or scope.
-    "eqeqeq"        : true,   // Require triple equals i.e. `===`.
-    "eqnull"        : false,  // Tolerate use of `== null`.
-    "evil"          : false,  // Tolerate use of `eval`.
-    "expr"          : false,  // Tolerate `ExpressionStatement` as Programs.
-    "forin"         : false,  // Tolerate `for in` loops without `hasOwnPrototype`.
-    "immed"         : true,   // Require immediate invocations to be wrapped in parens e.g. `( function(){}() );`
-    "latedef"       : true,   // Prohipit variable use before definition.
-    "loopfunc"      : false,  // Allow functions to be defined within loops.
-    "noarg"         : true,   // Prohibit use of `arguments.caller` and `arguments.callee`.
-    "regexp"        : false,   // Prohibit `.` and `[^...]` in regular expressions.
-    "regexdash"     : false,  // Tolerate unescaped last dash i.e. `[-...]`.
-    "scripturl"     : true,   // Tolerate script-targeted URLs.
-    "shadow"        : false,  // Allows re-define variables later in code e.g. `var x=1; x=2;`.
-    "supernew"      : false,  // Tolerate `new function () { ... };` and `new Object;`.
-    "undef"         : true,   // Require all non-global variables be declared before they are used.
+    // ECMAScript 5
+
+    // Whether ES5 syntax should be allowed.
+    "es5": true,
+    // Whether the "use strict"; pragma should be required.
+    "strict": false,
+    // Whether global "use strict"; should be allowed (also enables strict).
+    "globalstrict": false,
 
 
-    // Personal styling preferences.
-    "newcap"        : true,   // Require capitalization of all constructor functions e.g. `new F()`.
-    "noempty"       : true,   // Prohibit use of empty blocks.
-    "nonew"         : true,   // Prohibit use of constructors for side-effects.
-    "nomen"         : false,   // Prohibit use of initial or trailing underbars in names.
-    "onevar"        : false,  // Allow only one `var` statement per function.
-    "plusplus"      : false,  // Prohibit use of `++` & `--`.
-    "sub"           : false,  // Tolerate all forms of subscript notation besides dot notation e.g. `dict['key']` instead of `dict.key`.
-    "trailing"      : true,   // Prohibit trailing whitespaces.
-    "white"         : true,   // Check against strict whitespace and indentation rules.
-    "indent"        : 4       // Specify indentation spacing
+    // The Good Parts
+
+    // Whether automatic semicolon insertion should be allowed.
+    "asi": true,
+    // Whether line breaks should not be checked, e.g. `return [\n] x`.
+    "laxbreak": false,
+    // Whether bitwise operators (&, |, ^, etc.) should be forbidden.
+    "bitwise": false,
+    // Whether assignments inside `if`, `for` and `while` should be allowed. Usually
+    // conditions and loops are for comparison, not assignments.
+    "boss": false,
+    // Whether curly braces around all blocks should be required.
+    "curly": true,
+    // Whether `===` and `!==` should be required (instead of `==` and `!=`).
+    "eqeqeq": true,
+    // Whether `== null` comparisons should be allowed, even if `eqeqeq` is `true`.
+    "eqnull": false,
+    // Whether `eval` should be allowed.
+    "evil": false,
+    // Whether ExpressionStatement should be allowed as Programs.
+    "expr": true,
+    // Whether `for in` loops must filter with `hasOwnPrototype`.
+    "forin": true,
+    // Whether immediate invocations must be wrapped in parens, e.g.
+    // `( function(){}() );`.
+    "immed": true,
+    // Whether use before define should be forbidden.
+    "latedef": true,
+    // Whether functions should be allowed to be defined within loops.
+    "loopfunc": true,
+    // Whether arguments.caller and arguments.callee should be forbidden.
+    "noarg": false,
+    // Whether `.` should be forbidden in regexp literals.
+    "regexp": false,
+    // Whether unescaped first/last dash (-) inside brackets in regexps should be allowed.
+    "regexdash": false,
+    // Whether script-targeted URLs should be allowed.
+    "scripturl": false,
+    // Whether variable shadowing should be allowed.
+    "shadow": false,
+    // Whether `new function () { ... };` and `new Object;` should be allowed.
+    "supernew": false,
+    // Whether variables must be declared before used.
+    "undef": true,
+    // Whether `this` inside a non-constructor function should be allowed.
+    "validthis": false,
+    // Whether smarttabs should be allowed
+    // (http://www.emacswiki.org/emacs/SmartTabs).
+    "smarttabs": false,
+    // Whether the `__proto__` property should be allowed.
+    "proto": false,
+    // Whether one-case switch statements should be allowed.
+    "onecase": true,
+    // Whether non-standard (but widely adopted) globals should be predefined.
+    "nonstandard": false,
+    // Allow multiline strings.
+    "multistr": false,
+    // Whether line breaks should not be checked around commas.
+    "laxcomma": false,
+    // Whether semicolons may be ommitted for the trailing statements inside of a
+    // one-line blocks.
+    "lastsemic": true,
+    // Whether the `__iterator__` property should be allowed.
+    "iterator": false,
+    // Whether only function scope should be used for scope tests.
+    "funcscope": false,
+    // Whether es.next specific syntax should be allowed.
+    "esnext": false,
+
+
+    // Style preferences
+
+    // Whether constructor names must be capitalized.
+    "newcap": true,
+    // Whether empty blocks should be forbidden.
+    "noempty": true,
+    // Whether using `new` for side-effects should be forbidden.
+    "nonew": false,
+    // Whether names should be checked for leading or trailing underscores
+    // (object._attribute would be forbidden).
+    "nomen": false,
+    // Whether only one var statement per function should be allowed.
+    "onevar": true,
+    // Whether increment and decrement (`++` and `--`) should be forbidden.
+    "plusplus": false,
+    // Whether all forms of subscript notation are allowed.
+    "sub": false,
+    // Whether trailing whitespace rules apply.
+    "trailing": true,
+    // Whether strict whitespace rules apply.
+    "white": true,
+    // Specify indentation.
+    "indent": 4
 }
+
