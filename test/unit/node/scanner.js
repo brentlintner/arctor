@@ -1,7 +1,7 @@
 describe("scanner ->", function () {
-    var scanner = require('./../../lib/scanner'),
-        utils = require('./../../lib/utils'),
-        sinon_fixture = require('./../fixtures/sinon'), sinon,
+    var scanner = require('./../../../lib/node/scanner'),
+        utils = require('./../../../lib/node/utils'),
+        sinon_fixture = require('./../../fixtures/sinon'), sinon,
         fs = require('fs'),
         path = require('path'),
         fake_file = {

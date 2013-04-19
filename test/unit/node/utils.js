@@ -1,7 +1,7 @@
 describe("utils ->", function () {
-    var utils = require('./../../lib/utils'),
+    var utils = require('./../../../lib/node/utils'),
         fs = require('fs'),
-        sinon_fixture = require('./../fixtures/sinon'), sinon,
+        sinon_fixture = require('./../../fixtures/sinon'), sinon,
         fake_target_directory = "dir",
         fake_target_jsfile = "file.js",
         fake_target_directory_files = ["a.js", "b.js", "c.js"],

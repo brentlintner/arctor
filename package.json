@@ -13,7 +13,7 @@
     "url": "https://github.com/brentlintner/arctor/blob/master/README.md"
   }],
   "bin": { "arctor": "bin/arctor" },
-  "main": "lib/arctor.js",
+  "main": "lib/node/arctor.js",
   "files": [
     "README.md",
     "LICENSE",

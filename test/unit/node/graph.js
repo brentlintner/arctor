@@ -1,10 +1,10 @@
 describe('graph ->', function () {
     var connect = require('connect'),
         path = require('path'),
-        graph = require('./../../lib/graph'),
-        utils = require('./../../lib/utils'),
-        conf = require('./../../lib/conf'),
-        sinon_fixture = require('./../fixtures/sinon'), sinon,
+        graph = require('./../../../lib/node/graph'),
+        utils = require('./../../../lib/node/utils'),
+        conf = require('./../../../lib/node/conf'),
+        sinon_fixture = require('./../../fixtures/sinon'), sinon,
         connect_server,
         connect_static,
         orig_static_method;

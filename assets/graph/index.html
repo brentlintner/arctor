@@ -8,9 +8,13 @@
     <script src="arbor/lib/arbor.js"></script>
     <script src="arbor/lib/arbor-tween.js"></script>
     <script src="deps.js"></script>
-    <script src="lib/ui/graph.js"></script>
-    <script src="lib/ui/graph/renderer.js"></script>
-    <script src="lib/ui/boot.js"></script>
+    <script src="lib/browser/graph.js"></script>
+    <script src="lib/browser/graph/renderer.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            require('lib/browser/graph').draw();
+        });
+    </script>
   </head>
   <body>
     <div class="legend translucent">

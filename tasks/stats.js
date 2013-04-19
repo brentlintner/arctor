@@ -1,5 +1,5 @@
 var fs = require('fs'),
-    utils = require('./../lib/utils'),
+    utils = require('./../lib/node/utils'),
     LIB = __dirname + "/../lib/",
     TEST = __dirname + "/../test/",
     EMPTY_SPACE_OR_SINGLE_LINE_COMMENTS = /^\s*(\/\/.*)?$/; // TODO: count /* ... */
