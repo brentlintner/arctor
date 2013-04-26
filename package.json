@@ -28,7 +28,7 @@
   ],
   "dependencies": {
     "cli": "0.4.4-1",
-    "connect": "2.4.4",
+    "connect": "2.7.x",
     "detective": "0.2.1"
   },
   "devDependencies": {
