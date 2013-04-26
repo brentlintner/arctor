@@ -12,6 +12,10 @@
     "type": "MIT",
     "url": "https://github.com/brentlintner/arctor/blob/master/README.md"
   }],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brentlintner/arctor.git"
+  },
   "bin": { "arctor": "bin/arctor" },
   "main": "lib/node/arctor.js",
   "files": [
