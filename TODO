@@ -1,8 +1,0 @@
-* Draw arrows instead of colours to show which way dep goes.
-* If there is both './foo' and 'foo', only './foo' is used (and 'foo' is discarded).
-* Be able to turn off external moules (path, fs, etc).
-* Support more than just .js file extensions (ex: Jakefile).
-* Support externally assumed modules as not external.
-  i.e. you could have require('browser/style/path') as a definition.
-* Support really large (project) data sets.
-* Create docs.
