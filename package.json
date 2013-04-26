@@ -18,18 +18,6 @@
   },
   "bin": { "arctor": "bin/arctor" },
   "main": "lib/node/arctor.js",
-  "files": [
-    "README.md",
-    "LICENSE",
-    "HELP",
-    "bin",
-    "lib",
-    "assets",
-    "deps/browser-require/require.js",
-    "deps/browser-require/README.md",
-    "deps/arbor/lib",
-    "deps/arbor/README"
-  ],
   "dependencies": {
     "cli": "0.4.4-1",
     "connect": "2.7.x",
