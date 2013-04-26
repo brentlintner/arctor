@@ -3,7 +3,7 @@ var sinon = require('sinon'),
     sinonChai = require('sinon-chai');
 
 chai.use(sinonChai);
-chai.use(chai.should),
+chai.use(chai.should);
 
 module.exports = {
     sandbox: {

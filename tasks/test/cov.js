@@ -7,7 +7,7 @@ var childProcess = require('child_process'),
     deps_folder = __dirname + '/../../deps',
     MOCHA_LOCAL = __dirname + "/../../node_modules/mocha/bin/mocha",
     COVERJS_LOCAL = __dirname + "/../../node_modules/coverjs/bin/coverjs";
-        
+
 function log(data) {
     process.stdout.write(new Buffer(data).toString("utf-8"))
 }

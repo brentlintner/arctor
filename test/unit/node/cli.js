@@ -26,7 +26,7 @@ describe('cli ->', function () {
         sinon.stub(graph, 'create');
         sinon.stub(cli, 'setArgv');
         sinon.stub(cli, 'setApp');
-        sinon.stub(cli, 'getUsage')
+        sinon.stub(cli, 'getUsage');
         sinon.stub(cli, 'parse');
     });
 

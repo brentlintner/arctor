@@ -40,7 +40,7 @@ describe('graph ->', function () {
             sinon.stub(utils, 'log')
 
             graph.create();
-            
+
             connect_server
                 .listen
                 .should.have.been.calledWith(conf.ports.graph);
@@ -56,7 +56,7 @@ describe('graph ->', function () {
             var static_graphing_assets = ["lib", "assets/graph", "deps"];
 
             graph.create();
-            
+
             static_graphing_assets.forEach(function (item) {
                 connect
                     .static
