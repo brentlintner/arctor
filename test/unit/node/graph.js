@@ -79,7 +79,6 @@ describe('graph ->', function () {
                         end: sinon.spy()
                     },
                     deps = "var some_name = data_object;",
-                    response_headers = {"Content-Type": connect.mime.types.js},
                     depsjs_middleware_invoked;
 
                 graph.create(deps);
@@ -88,7 +87,6 @@ describe('graph ->', function () {
 
                 depsjs_middleware_invoked(null, res, null);
 
-                res.writeHead.should.have.been.calledWithExactly(response_headers);
                 res.end.should.have.been.calledWithExactly(deps);
             });
         })
