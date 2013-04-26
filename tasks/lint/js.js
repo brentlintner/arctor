@@ -1,4 +1,4 @@
-var JSHINT_LOCAL = __dirname + "/../../node_modules/jshint/bin/hint";
+var JSHINT_LOCAL = __dirname + "/../../node_modules/.bin/jshint";
 
 module.exports = function () {
     var childProcess = require('child_process'),
