@@ -1,6 +1,6 @@
 {
   "name": "arctor",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A CommonJS module dependency mapper and graphing tool.",
   "homepage": "http://github.com/brentlintner/arctor",
   "author": {
