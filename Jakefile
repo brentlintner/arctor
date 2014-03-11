@@ -4,9 +4,6 @@ task('lint', ['lint:js', 'lint:css']);
 namespace('lint', function () {
     desc('runs jshint');
     task('js', require('./tasks/lint/js'), true);
-
-    desc('runs csslint');
-    task('css', require('./tasks/lint/css'), true)
 });
 
 desc('runs test:node - usage: jake test[mocha_reporter]');
