@@ -5,8 +5,8 @@ var childProcess = require('child_process'),
     coverage_port = 7070,
     coverage_assets = __dirname + '/../../assets/cov',
     deps_folder = __dirname + '/../../deps',
-    MOCHA_LOCAL = __dirname + "/../../node_modules/mocha/bin/mocha",
-    COVERJS_LOCAL = __dirname + "/../../node_modules/coverjs/bin/coverjs";
+    MOCHA_LOCAL = __dirname + "/../../node_modules/.bin/mocha",
+    COVERJS_LOCAL = __dirname + "/../../node_modules/.bin/coverjs";
 
 function log(data) {
     process.stdout.write(new Buffer(data).toString("utf-8"))

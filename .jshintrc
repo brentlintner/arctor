@@ -7,7 +7,6 @@
   "node": true,
   "asi": true,
   "trailing": true,
-  "es5": true,
   "boss": true,
   "expr": true,
   "loopfunc": true,
