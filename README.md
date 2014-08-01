@@ -1,5 +1,7 @@
 # Arctor
 
+[![Build Status](https://travis-ci.org/brentlintner/arctor.svg?branch=master)](https://travis-ci.org/brentlintner/arctor)
+
 [![Dependency Status](https://david-dm.org/brentlintner/arctor.svg)](https://david-dm.org/brentlintner/arctor)
 
 A CommonJS module dependency mapper and graphing tool.
