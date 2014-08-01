@@ -28,10 +28,11 @@
   },
   "devDependencies": {
     "chai": "1.9.0",
-    "sinon": "1.9.0",
-    "sinon-chai": "2.5.0",
     "coverjs": "0.0.14",
+    "jake": "^8.0.1",
+    "jshint": "2.4.4",
     "mocha": "1.17.1",
-    "jshint": "2.4.4"
+    "sinon": "1.9.0",
+    "sinon-chai": "2.5.0"
   }
 }
