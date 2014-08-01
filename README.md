@@ -5,7 +5,7 @@
 A CommonJS module dependency mapper and graphing tool.
 
 This is still a WIP (in some ways). Depending on where you scanning from and the specified targets, things might not work as expected.
-Also, I started using this with nodejs based projects, so there may be (or is) unexpected behaviour that is not covered. 
+Also, I started using this with nodejs based projects, so there may be (or is) unexpected behaviour that is not covered.
 
 ## CLI Installation
 
