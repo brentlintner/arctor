@@ -18,6 +18,9 @@
   },
   "bin": { "arctor": "bin/arctor" },
   "main": "lib/node/arctor.js",
+  "scripts": {
+    "test": "jake test"
+  },
   "dependencies": {
     "cli": "0.4.5",
     "connect": "2.14.1",
