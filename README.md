@@ -1,5 +1,7 @@
 # Arctor
 
+[![Dependency Status](https://david-dm.org/brentlintner/arctor.svg)](https://david-dm.org/brentlintner/arctor)
+
 A CommonJS module dependency mapper and graphing tool.
 
 This is still a WIP (in some ways). Depending on where you scanning from and the specified targets, things might not work as expected.
