@@ -1,5 +1,7 @@
 # Arctor
 
+[![NPM version](https://badge.fury.io/js/arctor.svg)](http://badge.fury.io/js/arctor)
+
 [![Build Status](https://travis-ci.org/brentlintner/arctor.svg?branch=master)](https://travis-ci.org/brentlintner/arctor)
 
 [![Dependency Status](https://david-dm.org/brentlintner/arctor.svg)](https://david-dm.org/brentlintner/arctor)
