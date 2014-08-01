@@ -67,6 +67,10 @@ If you find this useful in any way, and have an issue or contribution, feel free
 * Tests (`jake test`) are green.
 * ASI is tolerated (for funsies..).
 
+## Versioning
+
+This project ascribes to [semantic versioning](http://semver.org).
+
 ## Brought To You By
 
 * [arbor.js](http://arborjs.org)
