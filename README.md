@@ -74,7 +74,7 @@ This project ascribes to [semantic versioning](http://semver.org).
 ## Brought To You By
 
 * [arbor.js](http://arborjs.org)
-* [mocha](http://visionmedia.github.com/mocha)
+* [mocha](http://mochajs.org/)
 * [chai](http://chaijs.com)
 * [sinon](http://sinonjs.org)
 * [coverjs](http://github.com/arian/CoverJS)
